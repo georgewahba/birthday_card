@@ -20,12 +20,13 @@ body {
     perspective: 1200px;
     transition: 1s;
 }
-.card:hover {
+.card.clicked {
     transform: rotate(-5deg);
-}
-.card:hover .outside {
+  }
+  .card.clicked .outside {
     transform: rotateY(-130deg);
-}
+  }
+
 .outside,
 .inside {
     height: 100%;
