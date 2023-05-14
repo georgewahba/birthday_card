@@ -35,7 +35,7 @@ body {
     left: 50.1%;
 }
 .inside {
-    background: linear-gradient(to right, #e7e7e7, #ffffff 30%);
+    background: linear-gradient(to right, #a5d6f7, #a5d6f7 30%);
     line-height: 2;
     padding: 0 20px;
     text-align: center;
@@ -63,11 +63,11 @@ body {
     transform: rotateX(0deg);
 }
 .front {
-    background-color: #ffffff;
+    background-color: #a5d6f7;
 }
 .back {
     transform: rotateY(180deg);
-    background: linear-gradient(to left, #e7e7e7, #ffffff 30%);
+    background: linear-gradient(to left, #a5d6f7, #a5d6f7 30%);
 }
 .cake {
     width: 100%;
@@ -128,6 +128,7 @@ body {
     transform: rotate(45deg);
     left: -1px;
 }
+
 .outside p {
     font-size: 23px;
     text-transform: uppercase;
@@ -135,6 +136,13 @@ body {
     text-align: center;
     letter-spacing: 6px;
     color: #000046;
+}
+.open_card {
+    position: absolute;
+    top: 375px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
 .inside h1 {
     font-size: 100px;
@@ -157,4 +165,19 @@ button {
   
   button:focus {
     outline: none; 
+  }
+
+  .back{
+    border-right: gray 2px solid;
+  }
+
+  .foto{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    z-index: -1;
   }
